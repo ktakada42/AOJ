@@ -9,7 +9,7 @@ while True:
 			print("#")
 		else:
 			while h <= H:
-				while h % 2 == 1:
+				if h % 2 == 1:
 					while w <= W:
 						if w % 2 == 1:
 							print("#", end='')
@@ -20,7 +20,7 @@ while True:
 					print()
 					h += 1
 					w = 1
-				while h % 2 == 0:
+				else:
 					while w <= W:
 						if w % 2 == 1:
 							print(".", end='')
